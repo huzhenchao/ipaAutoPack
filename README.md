@@ -3,6 +3,20 @@ ipa自动打包（可选择开发环境和生产环境） + 上传（fir、蒲�
 
 引用 https://github.com/huangxuan518/HXPackRobot.git 基础上做的修改
 
+# 使用说明
+
+1、请先配置pack.py中带有xxxxxx的部分，上传和邮件可选择配置
+2、配置项目中ExportOptions_*.plist，修改teamID为Apple开发者中心用户的teamID
+3、修改PackRobot.app中的执行文件路径，需用mac先打开自动操作app，选择文件->打开后编辑文件中的路径即可
+4、如配置不清楚的可以参考 https://github.com/huangxuan518/HXPackRobot.git 中的说明，后续会补充
+
+# 程序运行条件：
+
+Python 和 fir-cli(上传fir.im时需要)
+
+# 程序支持上传平台：
+
+fir.im / pgyer.com(蒲公英) / AppStore
 
 # 错误说明
 
@@ -22,3 +36,8 @@ You should reinstall the application.
 建立个软链接可解决（类似于Windows的快捷方式）
 ln -s /Applications/Xcode.app/Contents/Applications/Application\ Loader.app/Contents/itms /usr/local/itms
 
+# 扩展
+
+Python下载：https://www.python.org/downloads/
+
+fir-cli 安装使用:https://github.com/FIRHQ/fir-cli/blob/master/README.md
